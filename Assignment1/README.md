@@ -114,11 +114,11 @@ java -cp bin game.Game
 
 ## How to Use
 
-When you run the application, it will automatically generate and display a 10x10 City Map with random tiles.
+When you run the application, it will automatically generate and display both map types:
+1. A 10x10 City Map with random tiles (Roads, Forests, Buildings)
+2. A 10x10 Wilderness Map with random tiles (Swamps, Water, Forests)
 
-To generate a different map type, modify the parameter in `Game.java`:
-- `createMap(1)` for City Map (contains Roads, Forests, Buildings)
-- `createMap(2)` for Wilderness Map (contains Swamps, Water, Forests)
+To modify which maps are displayed, edit the `main()` method in `Game.java`.
 
 ### Map Legend
 
@@ -131,17 +131,31 @@ To generate a different map type, modify the parameter in `Game.java`:
 ## Example Output
 
 ```
-R F B R F B R B F R 
-B R F R B F R F B R 
-F B R F R B F R B F 
-R F B R F R B F R B 
-B R F B R F R B F R 
-F R B F R B F R B F 
-R B F R B F R F B R 
-B F R B F R B R F B 
-F R B F R B F R B F 
-R B F R B F R B F R 
+F B B R F B R F B F 
+B B R F F B B F B R 
+F R R B R B B R R F 
+B R R B B R R R R B 
+R F B B R R B F B F 
+R R R R B R R R F R 
+F R F B F B F R B F 
+R F F B B R B F R B 
+B F F F F B B F R R 
+B B F B F F B R F B 
+
+W S W W W F W F W W 
+S F S F S S F S F W 
+F F F F S F F S S F 
+F S W S S S S W S S 
+F S S W F S F F F S 
+F F S F W W W F F S 
+F S F W F S S W F F 
+W S F S S W W F F W 
+S S W F F W F F S S 
+W F S W W W W W S F 
 ```
+
+The first map is a City Map (containing R, F, B tiles).
+The second map is a Wilderness Map (containing S, W, F tiles).
 
 ## Key Design Pattern Benefits
 
