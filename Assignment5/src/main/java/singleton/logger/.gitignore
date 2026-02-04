@@ -1,0 +1,16 @@
+# Log files in the same directory
+logs/
+*.log
+*.txt
+
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Compiled files
+*.class
+out/
