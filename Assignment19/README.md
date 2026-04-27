@@ -130,4 +130,3 @@ Unlike MVC pattern which focuses on separating model-view-controller concerns, t
 - **No MVC**: We deliberately avoid MVC to demonstrate pure Mediator pattern
 - **Focus**: Communication management, not data-view separation
 - **Benefit**: Clients are completely independent and don't know each other exist
-
